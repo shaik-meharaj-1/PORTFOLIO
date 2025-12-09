@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaik Meharaj | Portfolio</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="menu-btn">☰</div>
+
+    <!------------- Header ------------->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!------------- Home ------------->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Shaik Meharaj</h1>
+            <h3 class="role">Python & Django Developer</h3>
+            <p>I am a passionate Python/Django developer skilled in building backend systems, APIs, authentication modules, and clean responsive web applications.</p>
+
+            
+            <a href="{% static 'resume/Shaik_Meharaj_[Python_Developer].pdf' %}"  download="Shaik_Meharaj_Resume.pdf" class="btn">
+                Download Resume
+            </a>
+
+        </div>
+        <div class="img">
+            <img src="static/images/Dev.png" alt="">
+        </div>
+    </section>
+
+    <!------------- About ------------->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>
+                I am a fresher Python Developer with hands-on experience in Django, REST API, SQL, HTML, CSS, and GitHub.
+                I enjoy building real-world applications, solving backend problems, and learning new technologies.
+            </p>
+        </div>
+    </section>
+
+    <!------------- Skills ------------->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skill-box">
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="bar"><span style="width: 90%;"></span></div>
+            </div>
+
+            <div class="skill">
+                <h3>Django</h3>
+                <div class="bar"><span style="width: 85%;"></span></div>
+            </div>
+
+            <div class="skill">
+                <h3>HTML & CSS</h3>
+                <div class="bar"><span style="width: 80%;"></span></div>
+            </div>
+
+            <div class="skill">
+                <h3>SQL</h3>
+                <div class="bar"><span style="width: 75%;"></span></div>
+            </div>
+
+            <div class="skill">
+                <h3>Git & GitHub</h3>
+                <div class="bar"><span style="width: 85%;"></span></div>
+            </div>
+        </div>
+    </section>
+
+    <!------------- Projects ------------->
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+
+        <div class="project-container">
+
+            <a href="https://todo-z3qo.onrender.com" style="text-decoration: none; color: black;">
+                <div class="project-card">
+                    <h3>Django Todo App</h3>
+                    <p>Login & signup, CRUD operations, Django, SQLite database, HTML & CSS</p>
+                </div>
+            </a>
+            <div class="project-card">
+                <h3>OTP Login System</h3>
+                <p>Gmail SMTP OTP authentication, resend OTP, session handling, Django backend.</p>
+            </div>
+
+            <div class="project-card" >
+                <h3>Portfolio Website</h3>
+                <p>Responsive personal portfolio using HTML, CSS & Django static files.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!------------- Contact ------------->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <div class="contact-info">
+            <p><strong>Email:</strong> shaikmeharaj481@gmail.com</p>
+            <p><strong>Location:</strong> Hyderabad, India</p>
+        </div>
+    </section>
+ <script>
+    const menuBtn = document.querySelector(".menu-btn");
+    const navbar = document.querySelector(".navbar");
+
+    menuBtn.onclick = () => {
+        navbar.classList.toggle("active");
+    };
+</script>
+
+</body>
+</html>

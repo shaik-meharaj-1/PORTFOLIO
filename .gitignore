@@ -1,0 +1,43 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.sqlite3
+*.log
+
+# === Django ===
+db.sqlite3
+media/
+staticfiles/
+static_root/
+local_settings.py
+*.pot
+
+# === Environments ===
+.env
+env/
+venv/
+ENV/
+*.env
+
+# === VS Code ===
+.vscode/
+.code-workspace
+
+# === PyCharm ===
+.idea/
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Cache ===
+.cache/
+pytest_cache/
+
+# === Background / Temp ===
+*.bak
+*.tmp
